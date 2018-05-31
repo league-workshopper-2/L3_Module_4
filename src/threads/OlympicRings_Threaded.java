@@ -16,21 +16,26 @@ public static void main(String[] args) {
 	
 	timmy.setSpeed(100);
 	timmy.hide();
+	timmy.setPenWidth(5);
 	tammy.setSpeed(100);
 	tammy.hide();
+	tammy.setPenWidth(5);
 	sammy.setSpeed(100);
 	sammy.hide();
+	sammy.setPenWidth(5);
 	pammy.setSpeed(100);
 	pammy.hide();
+	pammy.setPenWidth(5);
 	wammy.setSpeed(100);
 	wammy.hide();
+	wammy.setPenWidth(5);
 	Thread r1 = new Thread(()->{
 		timmy.penDown();
 		timmy.hide();
 		timmy.setPenColor(Color.BLUE);
 		for (int i = 0; i <360; i++) {
-			timmy.move(1);
-			timmy.turn(1);
+			timmy.move(2);
+			timmy.turn(2);
 		}
 		
 	});
@@ -39,8 +44,8 @@ public static void main(String[] args) {
 		tammy.hide();
 		tammy.setPenColor(Color.YELLOW);
 		for (int i = 0; i < 360; i++) {
-			tammy.move(1);
-			tammy.turn(1);
+			tammy.move(2);
+			tammy.turn(2);
 		}
 		
 	});
@@ -49,8 +54,8 @@ public static void main(String[] args) {
 		sammy.hide();
 		sammy.setPenColor(Color.BLACK);
 		for (int i = 0; i < 360; i++) {
-			sammy.move(1);
-			sammy.turn(1);
+			sammy.move(2);
+			sammy.turn(2);
 		}
 		
 	});
@@ -59,8 +64,8 @@ public static void main(String[] args) {
 		pammy.hide();
 		pammy.setPenColor(Color.GREEN);
 		for (int i = 0; i <360; i++) {
-			pammy.move(1);
-			pammy.turn(1);
+			pammy.move(2);
+			pammy.turn(2);
 		}
 	});
 	Thread r5 = new Thread(()->{
@@ -68,8 +73,8 @@ public static void main(String[] args) {
 		wammy.hide();
 		wammy.setPenColor(Color.RED);
 		for (int i = 0; i <360; i++) {
-			wammy.move(1);
-			wammy.turn(1);
+			wammy.move(2);
+			wammy.turn(2);
 		}
 	});
 			
